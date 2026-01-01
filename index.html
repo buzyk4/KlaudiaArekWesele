@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <title>Klaudia & Arek — Wesele</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🪩</text></svg>"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=2" />
+  </head>
+  <body>
+    <!-- Dekoracje disco w tle -->
+    <div class="disco-decoration disco-ball-1">🪩</div>
+    <div class="disco-decoration disco-ball-2">🪩</div>
+    <div class="disco-decoration disco-ball-3">🪩</div>
+    <div class="disco-decoration dancer-1">💃</div>
+    <div class="disco-decoration dancer-2">🕺</div>
+    <div class="disco-decoration dancer-3">🕴️</div>
+    <div class="disco-decoration sparkle-1">✨</div>
+    <div class="disco-decoration sparkle-2">✨</div>
+    <div class="disco-decoration sparkle-3">⚡</div>
+    <div class="disco-decoration music-1">🎵</div>
+    <div class="disco-decoration music-2">🎶</div>
+    <div class="disco-decoration light-1">💡</div>
+
+    <div id="name-modal" class="modal hidden">
+      <div class="modal-content">
+        <h2>Wpisz swoje imię i nazwisko</h2>
+        <p>
+          Aby zobaczyć zaproszenie, wprowadź swoje imię i nazwisko z listy
+          gości.
+        </p>
+        <input
+          id="modal-name"
+          type="text"
+          placeholder="Twoje imię i nazwisko"
+        />
+        <button id="submit-name" class="btn">Dalej</button>
+        <p id="error" style="color: red; display: none">
+          Imię i nazwisko nie znajduje się na liście gości.
+        </p>
+      </div>
+    </div>
+    <header class="site-header">
+      <nav class="nav">
+        <a class="logo" href="#hero">Klaudia & Arek</a>
+        <ul>
+          <li><a href="#details">Szczegóły</a></li>
+          <li><a href="#" id="klaudia-contact">Klaudia</a></li>
+          <li><a href="#" id="arek-contact">Arek</a></li>
+          <li>
+            <a href="#potwierdzenie" class="nav-btn">Potwierdź przybycie</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content" class="hidden">
+      <section id="hero" class="hero">
+        <div class="hero-inner">
+          <h1 id="greeting">Klaudia & Arek</h1>
+          <p class="tag" id="tag">
+            <!-- Tekst zostanie wygenerowany dynamicznie -->
+          </p>
+          <p class="date">23 maja 2026 — Janiowe Wzgórze</p>
+          <div class="scroll-indicator">
+            <span>⬇</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="details" class="details-section">
+        <div class="details-inner">
+          <h2>✨ Szczegóły Imprezy Stulecia ✨</h2>
+          <p class="details-intro">
+            Przygotujcie się na noc pełną groov'u! 🕺🎶
+          </p>
+
+          <div class="details-grid">
+            <div class="detail-card">
+              <div class="detail-icon">📅</div>
+              <h3>Kiedy Zaczyna Się Zabawa?</h3>
+              <p>23 maja 2026 o godzinie 16:00</p>
+              <p class="detail-note">Nie spóźnij się, bo disco nie czeka!</p>
+            </div>
+
+            <div class="detail-card">
+              <div class="detail-icon">🏡</div>
+              <h3>Gdzie Się Bawimy?</h3>
+              <p>Janiowe Wzgórze 33, Rzeszów</p>
+              <p class="detail-note">
+                Sala Wiata – najlepszy parkiet w okolicy!
+              </p>
+              <a
+                href="https://maps.google.com/?q=Janiowe+Wzgórze+33,+Rzeszów"
+                target="_blank"
+                class="map-link"
+                >📍 Otwórz w Mapach Google</a
+              >
+            </div>
+
+            <div class="detail-card">
+              <div class="detail-icon">💍</div>
+              <h3>Wesele Humanistyczne</h3>
+              <p>Ceremonia w formie świeckiej</p>
+              <p class="detail-note">Osobista, pełna miłości uroczystość 💕</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sekcja z zasadami imprezy -->
+      <section id="zasady" class="container scroll-reveal">
+        <h2>Ważne Informacje 🎪</h2>
+        <div class="details-grid">
+          <div class="detail-card">
+            <div class="detail-icon">👗</div>
+            <h3>Dress Code</h3>
+            <p>
+              Mile widziany strój w stylu disco lat 70., ale nie jest to
+              obowiązkowe!
+            </p>
+            <p class="detail-note">
+              Cekinowe ubrania, dzwony, platfomy – im bardziej kolorowo, tym
+              lepiej! 🌈
+            </p>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon">🍴</div>
+            <h3>Jadłospis</h3>
+            <p>Pyszne jedzonko dla każdego!</p>
+            <p class="detail-note">
+              Masz specjalną dietę? Daj nam znać przy potwierdzeniu przybycia!
+              🥗
+            </p>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon">🏨</div>
+            <h3>Nocleg</h3>
+            <p>Potrzebujesz noclegu?</p>
+            <p class="detail-note">
+              Na terenie Janiowego Wzgórza dostępne są noclegi dla imprezowiczów
+              w obniżonej cenie! 💤✨
+            </p>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon">🚐</div>
+            <h3>Podwózka</h3>
+            <p>Bezpieczny powrót do domu</p>
+            <p class="detail-note">
+              Zapewnimy transport po imprezie – będzie można bezpiecznie wrócić!
+              🛣️
+            </p>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon">🔞</div>
+            <h3>18+</h3>
+            <p>Impreza przeznaczona wyłącznie dla osób pełnoletnich</p>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon">🎁</div>
+            <h3>Prezenty</h3>
+            <p style="font-size: 2rem; margin: 0.5rem 0">💵 + 💿 = ❤️</p>
+            <p class="detail-note">
+              Najbardziej ucieszy nas gotówka lub winyle z lat 70. zamiast
+              innych prezentów!
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="inspiracje-panie" class="container inspiracje">
+        <h2>Inspiracje dla Pań</h2>
+        <div class="grid">
+          <img src="images/MenInspo1.jpg" alt="Inspiration 1" />
+          <img src="images/menInspo2.webp" alt="Inspiration 2" />
+          <img src="images/menInspo3.webp" alt="Inspiration 3" />
+          <img src="images/menInspo4.webp" alt="Inspiration 4" />
+          <img src="images/menInspo5.webp" alt="Inspiration 5" />
+          <img src="images/menInspo6.webp" alt="Inspiration 6" />
+          <img src="images/MenInspo1.jpg" alt="Inspiration 7" />
+          <img src="images/menInspo2.webp" alt="Inspiration 8" />
+        </div>
+      </section>
+
+      <section id="inspiracje-panowie" class="container inspiracje">
+        <h2>Inspiracje dla Panów</h2>
+        <div class="grid">
+          <img src="images/menInspo1.jpg" alt="Inspiration 1" />
+          <img src="images/menInspo2.webp" alt="Inspiration 2" />
+          <img src="images/menInspo3.webp" alt="Inspiration 3" />
+          <img src="images/menInspo4.webp" alt="Inspiration 4" />
+          <img src="images/menInspo5.webp" alt="Inspiration 5" />
+          <img src="images/menInspo6.webp" alt="Inspiration 6" />
+          <img src="images/menInspo7.jpg" alt="Inspiration 7" />
+          <img src="images/menInspo8.jpg" alt="Inspiration 8" />
+        </div>
+      </section>
+
+      <section id="potwierdzenie" class="contact-section">
+        <div class="contact-inner">
+          <h2>💌 Potwierdzenie Przybycia 💌</h2>
+          <p class="contact-intro">Daj nam znać, że dołączysz do zabawy!</p>
+
+          <div class="contact-grid">
+            <div class="contact-card">
+              <div class="contact-icon">👰</div>
+              <h3>Klaudia</h3>
+              <div class="contact-details">
+                <p>
+                  <span class="contact-label">📞 Telefon:</span> 534 948 464
+                </p>
+                <p>
+                  <span class="contact-label">✉️ Email:</span>
+                  klaudusia22@op.pl
+                </p>
+                <p>
+                  <span class="contact-label">💬 Messenger:</span> Klaudia
+                  Prokop
+                </p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-icon">🤵</div>
+              <h3>Arek</h3>
+              <div class="contact-details">
+                <p>
+                  <span class="contact-label">📞 Telefon:</span> 576 635 256
+                </p>
+                <p>
+                  <span class="contact-label">✉️ Email:</span> buzyk99@gmail.com
+                </p>
+                <p><span class="contact-label">💬 Messenger:</span> Arek Buż</p>
+              </div>
+            </div>
+          </div>
+
+          <p class="contact-note">
+            Możesz napisać, zadzwonić lub wysyłać wiadomość na Messengerze - jak
+            Ci wygodniej! 😊
+          </p>
+        </div>
+      </section>
+
+      <!-- Mapa z lokalizacją -->
+      <section id="mapa" class="map-section scroll-reveal">
+        <div class="map-container">
+          <h2>📍 Jak do nas trafić?</h2>
+          <div class="map-wrapper">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2562.8699999999997!2d22.0!3d50.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473cfae3c0c9b165%3A0x1234567890abcdef!2sJaniowe%20Wzg%C3%B3rze%2033%2C%20Rzesz%C3%B3w!5e0!3m2!1spl!2spl!4v1234567890123!5m2!1spl!2spl&q=Janiowe+Wzgórze+33,+Rzeszów"
+              width="100%"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div id="image-modal" class="modal hidden">
+      <div class="modal-content">
+        <span id="close-modal" class="close">&times;</span>
+        <img id="modal-image" src="" alt="Powiększone zdjęcie" />
+        <button
+          id="prev-image"
+          class="nav-arrow prev"
+          aria-label="Poprzednie zdjęcie"
+        >
+          &#8249;
+        </button>
+        <button
+          id="next-image"
+          class="nav-arrow next"
+          aria-label="Następne zdjęcie"
+        >
+          &#8250;
+        </button>
+      </div>
+    </div>
+
+    <!-- Modal kontaktowy dla Klaudii -->
+    <div id="klaudia-modal" class="modal contact-modal hidden">
+      <div class="modal-content contact-modal-content">
+        <span class="close-contact" data-modal="klaudia-modal">&times;</span>
+        <div class="contact-icon" style="font-size: 3rem; margin-bottom: 1rem">
+          👰
+        </div>
+        <h2>Klaudia</h2>
+        <div
+          class="contact-details"
+          style="text-align: left; margin-top: 1.5rem"
+        >
+          <p style="margin: 1rem 0; font-size: 1.1rem">
+            <span class="contact-label">📞 Telefon:</span><br />
+            <a
+              href="tel:534948464"
+              style="color: #ff1493; text-decoration: none; font-weight: 600"
+              >534 948 464</a
+            >
+          </p>
+          <p style="margin: 1rem 0; font-size: 1.1rem">
+            <span class="contact-label">✉️ Email:</span><br />
+            <a
+              href="mailto:klaudusia22@op.pl"
+              style="color: #ff1493; text-decoration: none; font-weight: 600"
+              >klaudusia22@op.pl</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal kontaktowy dla Areka -->
+    <div id="arek-modal" class="modal contact-modal hidden">
+      <div class="modal-content contact-modal-content">
+        <span class="close-contact" data-modal="arek-modal">&times;</span>
+        <div class="contact-icon" style="font-size: 3rem; margin-bottom: 1rem">
+          🤵
+        </div>
+        <h2>Arek</h2>
+        <div
+          class="contact-details"
+          style="text-align: left; margin-top: 1.5rem"
+        >
+          <p style="margin: 1rem 0; font-size: 1.1rem">
+            <span class="contact-label">📞 Telefon:</span><br />
+            <a
+              href="tel:576635256"
+              style="color: #ff1493; text-decoration: none; font-weight: 600"
+              >576 635 256</a
+            >
+          </p>
+          <p style="margin: 1rem 0; font-size: 1.1rem">
+            <span class="contact-label">✉️ Email:</span><br />
+            <a
+              href="mailto:buzyk99@gmail.com"
+              style="color: #ff1493; text-decoration: none; font-weight: 600"
+              >buzyk99@gmail.com</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="guests.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
