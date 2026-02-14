@@ -1,9 +1,27 @@
-// Smooth scroll for internal links
+// Hamburger menu toggle
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
+if (hamburger && navMenu) {
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+}
+
+// Smooth scroll for internal links - simplified
 document.querySelectorAll('a[href^="#"]').forEach((link) => {
   link.addEventListener("click", (e) => {
     const target = document.querySelector(link.getAttribute("href"));
     if (target) {
       e.preventDefault();
+
+      // Close mobile menu
+      if (navMenu && hamburger) {
+        navMenu.classList.remove("active");
+        hamburger.classList.remove("active");
+      }
+
       target.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   });
@@ -122,7 +140,7 @@ function updateGreeting(name, guest) {
         greetingText = `Drodzy ${guest.vocative} i ${guest.partnerVocative}!`;
       }
 
-      invitationText = `Z wielką radością zapraszamy Was na nasze wesele. Uroczystość odbędzie się 23 maja 2026 o godzinie 16:00 w Janiowym Wzgórzu. Nie możemy się doczekać świętowania razem z Wami! ❤️`;
+      invitationText = `Z wielką radością zapraszamy Was na nasze wesele. Uroczystość odbędzie się 23 maja 2026 o godzinie 15:00 w Janiowym Wzgórzu. Nie możemy się doczekać świętowania razem z Wami! ❤️`;
     } else {
       // Forma dla osoby z osobą towarzyszącą (nieokreśloną)
       const salutation = guest.gender === "female" ? "Droga" : "Drogi";
@@ -130,7 +148,7 @@ function updateGreeting(name, guest) {
         ? `${guest.vocative} ${guest.lastName}`
         : name;
       greetingText = `${salutation} ${vocativeName}!`;
-      invitationText = `Z wielką radością zapraszamy Cię wraz z osobą towarzyszącą na nasze wesele. Uroczystość odbędzie się 23 maja 2026 o godzinie 16:00 w Janiowym Wzgórzu. Nie możemy się doczekać świętowania razem z Wami! ❤️`;
+      invitationText = `Z wielką radością zapraszamy Cię wraz z osobą towarzyszącą na nasze wesele. Uroczystość odbędzie się 23 maja 2026 o godzinie 15:00 w Janiowym Wzgórzu. Nie możemy się doczekać świętowania razem z Wami! ❤️`;
     }
 
     greeting.textContent = greetingText;
@@ -138,7 +156,7 @@ function updateGreeting(name, guest) {
   } else {
     greeting.textContent = "Klaudia & Arek";
     tag.textContent =
-      "Z wielką radością zapraszamy na nasze wesele. Uroczystość odbędzie się 23 maja 2026 o godzinie 16:00 w Janiowym Wzgórzu. ❤️";
+      "Z wielką radością zapraszamy na nasze wesele. Uroczystość odbędzie się 23 maja 2026 o godzinie 15:00 w Janiowym Wzgórzu. ❤️";
   }
 }
 
@@ -149,7 +167,7 @@ const closeModal = document.getElementById("close-modal");
 const prevBtn = document.getElementById("prev-image");
 const nextBtn = document.getElementById("next-image");
 const inspirationImages = Array.from(
-  document.querySelectorAll(".inspiracje img")
+  document.querySelectorAll(".inspiracje img"),
 );
 let currentImageIndex = 0;
 
@@ -215,7 +233,7 @@ const scrollObserver = new IntersectionObserver((entries) => {
 // Obserwuj wszystkie sekcje (oprócz hero, która jest zawsze widoczna)
 window.addEventListener("load", () => {
   const sections = document.querySelectorAll(
-    ".details-section, .inspiracje, .contact-section, .scroll-reveal"
+    ".details-section, .inspiracje, .contact-section, .scroll-reveal",
   );
   sections.forEach((section) => {
     section.classList.add("scroll-reveal");

@@ -75,8 +75,15 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: Montserrat, system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  font-family:
+    Montserrat,
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif;
   text-align: center;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -110,7 +117,9 @@ body::before {
   left: 5%;
   font-size: 6rem;
   opacity: 0.15;
-  animation: rotate 20s linear infinite, float 6s ease-in-out infinite;
+  animation:
+    rotate 20s linear infinite,
+    float 6s ease-in-out infinite;
   z-index: 0;
   pointer-events: none;
 }
@@ -175,14 +184,18 @@ body::after {
 .disco-ball-1 {
   top: 15%;
   right: 10%;
-  animation: rotate 15s linear infinite, float 5s ease-in-out infinite;
+  animation:
+    rotate 15s linear infinite,
+    float 5s ease-in-out infinite;
 }
 
 .disco-ball-2 {
   top: 60%;
   left: 8%;
   font-size: 5rem;
-  animation: rotate 12s linear infinite reverse, float 7s ease-in-out infinite;
+  animation:
+    rotate 12s linear infinite reverse,
+    float 7s ease-in-out infinite;
   animation-delay: 2s;
 }
 
@@ -190,7 +203,9 @@ body::after {
   bottom: 20%;
   right: 15%;
   font-size: 3.5rem;
-  animation: rotate 18s linear infinite, float 6s ease-in-out infinite;
+  animation:
+    rotate 18s linear infinite,
+    float 6s ease-in-out infinite;
   animation-delay: 1s;
 }
 
@@ -247,14 +262,18 @@ body::after {
   top: 35%;
   right: 18%;
   font-size: 3rem;
-  animation: float 4s ease-in-out infinite, fadeInOut 3s ease-in-out infinite;
+  animation:
+    float 4s ease-in-out infinite,
+    fadeInOut 3s ease-in-out infinite;
 }
 
 .music-2 {
   bottom: 45%;
   left: 18%;
   font-size: 3.5rem;
-  animation: float 5s ease-in-out infinite, fadeInOut 4s ease-in-out infinite;
+  animation:
+    float 5s ease-in-out infinite,
+    fadeInOut 4s ease-in-out infinite;
   animation-delay: 1.5s;
 }
 
@@ -365,10 +384,18 @@ body::after {
   -ms-transform: translateY(30px);
   -o-transform: translateY(30px);
   transform: translateY(30px);
-  -webkit-transition: opacity 1.2s ease-out, -webkit-transform 1.2s ease-out;
-  -moz-transition: opacity 1.2s ease-out, -moz-transform 1.2s ease-out;
-  -o-transition: opacity 1.2s ease-out, -o-transform 1.2s ease-out;
-  transition: opacity 1.2s ease-out, transform 1.2s ease-out;
+  -webkit-transition:
+    opacity 1.2s ease-out,
+    -webkit-transform 1.2s ease-out;
+  -moz-transition:
+    opacity 1.2s ease-out,
+    -moz-transform 1.2s ease-out;
+  -o-transition:
+    opacity 1.2s ease-out,
+    -o-transform 1.2s ease-out;
+  transition:
+    opacity 1.2s ease-out,
+    transform 1.2s ease-out;
 }
 
 .scroll-reveal.revealed {
@@ -473,6 +500,10 @@ body::after {
   -webkit-box-shadow: 0 8px 30px rgba(255, 20, 147, 0.7);
   -moz-box-shadow: 0 8px 30px rgba(255, 20, 147, 0.7);
   box-shadow: 0 8px 30px rgba(255, 20, 147, 0.7);
+}
+
+.hamburger {
+  display: none;
 }
 
 /* ===================================
@@ -608,6 +639,7 @@ body::after {
   padding: 40px 20px;
   position: relative;
   overflow: hidden;
+  scroll-margin-top: 80px;
 }
 
 .details-section::before {
@@ -680,10 +712,18 @@ body::after {
   -webkit-box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
-  -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
-  -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  -moz-transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  -o-transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -811,10 +851,18 @@ body::after {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
-  -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
-  -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  -moz-transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  -o-transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   -webkit-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
@@ -855,6 +903,7 @@ body::after {
   justify-content: center;
   padding: 40px 20px;
   position: relative;
+  scroll-margin-top: 80px;
 }
 
 .contact-inner {
@@ -900,10 +949,18 @@ body::after {
   -webkit-box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
-  -webkit-transition: transform 0.3s ease, box-shadow 0.3s ease;
-  -moz-transition: transform 0.3s ease, box-shadow 0.3s ease;
-  -o-transition: transform 0.3s ease, box-shadow 0.3s ease;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  -webkit-transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  -moz-transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  -o-transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
@@ -1003,10 +1060,18 @@ textarea {
   -moz-justify-content: center;
   justify-content: center;
   z-index: 1000;
-  -webkit-transition: opacity 0.5s ease, transform 0.5s ease;
-  -moz-transition: opacity 0.5s ease, transform 0.5s ease;
-  -o-transition: opacity 0.5s ease, transform 0.5s ease;
-  transition: opacity 0.5s ease, transform 0.5s ease;
+  -webkit-transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+  -moz-transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+  -o-transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
 }
 
 .modal.hidden {
@@ -1062,10 +1127,18 @@ textarea {
   border-radius: 8px;
   font-size: 0.9rem;
   font-family: "Montserrat", sans-serif;
-  -webkit-transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  -moz-transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  -o-transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  -webkit-transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  -moz-transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  -o-transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .modal-content input:focus {
@@ -1080,10 +1153,18 @@ textarea {
   background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
   padding: 0.7rem;
   font-size: 0.9rem;
-  -webkit-transition: transform 0.2s ease, box-shadow 0.3s ease;
-  -moz-transition: transform 0.2s ease, box-shadow 0.3s ease;
-  -o-transition: transform 0.2s ease, box-shadow 0.3s ease;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  -webkit-transition:
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+  -moz-transition:
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+  -o-transition:
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
 }
 
 #submit-name:hover {
@@ -1345,8 +1426,79 @@ textarea {
 }
 
 @media (max-width: 480px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    z-index: 50;
+  }
+
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
+  }
+
+  .nav {
+    padding: 12px 16px;
+  }
+
+  .nav .logo {
+    font-size: 18px;
+    white-space: nowrap;
+  }
+
   .nav ul {
-    display: none;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: calc(100vh - 60px);
+    background: rgba(30, 30, 50, 0.98);
+    backdrop-filter: blur(20px);
+    flex-direction: column;
+    padding: 30px 20px;
+    gap: 20px;
+    transition: right 0.3s ease;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav ul.active {
+    right: 0;
+  }
+
+  .nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav a {
+    font-size: 1rem;
+    display: block;
+    padding: 12px;
+  }
+
+  .nav-btn {
+    display: none !important;
   }
 
   .gallery .grid,
@@ -1373,6 +1525,7 @@ textarea {
 
   .details-section {
     padding: 30px 15px;
+    scroll-margin-top: 100px;
   }
 
   .details-section h2 {
@@ -1404,6 +1557,10 @@ textarea {
     min-height: 150px;
   }
 
+  .contact-section {
+    scroll-margin-top: 120px;
+  }
+
   .contact-grid {
     grid-template-columns: 1fr;
   }
@@ -1422,10 +1579,20 @@ textarea {
 
   .map-container h2 {
     font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .map-container {
+    padding: 0 1rem;
+  }
+
+  .map-wrapper {
+    aspect-ratio: 1 / 1;
+    max-height: 400px;
   }
 
   .map-wrapper iframe {
-    height: 300px;
+    height: 100% !important;
   }
 }
 
@@ -1451,10 +1618,18 @@ textarea {
   font-size: 2rem;
   color: #999;
   cursor: pointer;
-  -webkit-transition: color 0.3s ease, transform 0.3s ease;
-  -moz-transition: color 0.3s ease, transform 0.3s ease;
-  -o-transition: color 0.3s ease, transform 0.3s ease;
-  transition: color 0.3s ease, transform 0.3s ease;
+  -webkit-transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+  -moz-transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+  -o-transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
   line-height: 1;
   font-weight: 300;
 }
@@ -1472,4 +1647,63 @@ textarea {
   font-weight: 600;
   color: #666;
   font-size: 0.95rem;
+}
+
+/* ===================================
+   IKONA WINYLU
+   =================================== */
+.vinyl-icon {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    #000 0%,
+    #000 15%,
+    #1a1a1a 15%,
+    #1a1a1a 18%,
+    #000 18%,
+    #000 35%,
+    #1a1a1a 35%,
+    #1a1a1a 37%,
+    #000 37%,
+    #000 50%,
+    #1a1a1a 50%,
+    #1a1a1a 52%,
+    #000 52%,
+    #000 65%,
+    #1a1a1a 65%,
+    #1a1a1a 67%,
+    #000 67%
+  );
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.vinyl-icon::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  height: 30%;
+  border-radius: 50%;
+  background: #2a2a2a;
+  box-shadow: inset 0 0 3px rgba(255, 215, 0, 0.4);
+}
+
+.vinyl-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 4px var(--accent);
 }

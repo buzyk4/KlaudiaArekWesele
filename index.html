@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
   <head>
     <meta charset="utf-8" />
@@ -55,7 +55,12 @@
     <header class="site-header">
       <nav class="nav">
         <a class="logo" href="#hero">Klaudia & Arek</a>
-        <ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul id="nav-menu">
           <li><a href="#details">Szczegóły</a></li>
           <li><a href="#" id="klaudia-contact">Klaudia</a></li>
           <li><a href="#" id="arek-contact">Arek</a></li>
@@ -91,7 +96,7 @@
             <div class="detail-card">
               <div class="detail-icon">📅</div>
               <h3>Kiedy Zaczyna Się Zabawa?</h3>
-              <p>23 maja 2026 o godzinie 16:00</p>
+              <p>23 maja 2026 o godzinie 15:00</p>
               <p class="detail-note">Nie spóźnij się, bo disco nie czeka!</p>
             </div>
 
@@ -171,10 +176,12 @@
           <div class="detail-card">
             <div class="detail-icon">🎁</div>
             <h3>Prezenty</h3>
-            <p style="font-size: 2rem; margin: 0.5rem 0">💵 + 💿 = ❤️</p>
+            <p style="font-size: 2rem; margin: 0.5rem 0">
+              💵 + <span class="vinyl-icon"></span> = ❤️
+            </p>
             <p class="detail-note">
-              Najbardziej ucieszy nas gotówka lub winyle z lat 70. zamiast
-              innych prezentów!
+              Najbardziej ucieszy nas gotówka lub kultowe winyle z muzyką disco,
+              funk i soul - w klimacie naszej imprezy! 🎶✨
             </p>
           </div>
         </div>
@@ -183,28 +190,60 @@
       <section id="inspiracje-panie" class="container inspiracje">
         <h2>Inspiracje dla Pań</h2>
         <div class="grid">
-          <img src="images/wonemLook1.jpg" alt="Inspiration 1" />
-          <img src="images/wonemLook2.jpg" alt="Inspiration 2" />
-          <img src="images/wonemLook3.jpg" alt="Inspiration 3" />
-          <img src="images/wonemLook4.jpg" alt="Inspiration 4" />
-          <img src="images/wonemLook5.jpg" alt="Inspiration 5" />
-          <img src="images/wonemLook6.jpg" alt="Inspiration 6" />
-          <img src="images/wonemLook7.jpg" alt="Inspiration 7" />
-          <img src="images/wonemLook8.jpg" alt="Inspiration 8" />
+          <img src="images/wonemLook1.jpg" alt="Inspiration 1" loading="lazy" />
+          <img src="images/wonemLook2.jpg" alt="Inspiration 2" loading="lazy" />
+          <img src="images/wonemLook3.jpg" alt="Inspiration 3" loading="lazy" />
+          <img src="images/wonemLook4.jpg" alt="Inspiration 4" loading="lazy" />
+          <img src="images/wonemLook5.jpg" alt="Inspiration 5" loading="lazy" />
+          <img src="images/wonemLook6.jpg" alt="Inspiration 6" loading="lazy" />
+          <img src="images/wonemLook7.jpg" alt="Inspiration 7" loading="lazy" />
+          <img src="images/wonemLook8.jpg" alt="Inspiration 8" loading="lazy" />
         </div>
       </section>
 
       <section id="inspiracje-panowie" class="container inspiracje">
         <h2>Inspiracje dla Panów</h2>
         <div class="grid">
-          <img src="images/menOutfits1.jpg" alt="Inspiration 1" />
-          <img src="images/menOutfits2.jpg" alt="Inspiration 2" />
-          <img src="images/menOutfits3.jpg" alt="Inspiration 3" />
-          <img src="images/menOutfits4.jpg" alt="Inspiration 4" />
-          <img src="images/menOutfits5.jpg" alt="Inspiration 5" />
-          <img src="images/menOutfits6.jpg" alt="Inspiration 6" />
-          <img src="images/menOutfits7.jpg" alt="Inspiration 7" />
-          <img src="images/menOutfits8.jpg" alt="Inspiration 8" />
+          <img
+            src="images/menOutfits1.jpg"
+            alt="Inspiration 1"
+            loading="lazy"
+          />
+          <img
+            src="images/menOutfits2.jpg"
+            alt="Inspiration 2"
+            loading="lazy"
+          />
+          <img
+            src="images/menOutfits3.jpg"
+            alt="Inspiration 3"
+            loading="lazy"
+          />
+          <img
+            src="images/menOutfits4.jpg"
+            alt="Inspiration 4"
+            loading="lazy"
+          />
+          <img
+            src="images/menOutfits5.jpg"
+            alt="Inspiration 5"
+            loading="lazy"
+          />
+          <img
+            src="images/menOutfits6.jpg"
+            alt="Inspiration 6"
+            loading="lazy"
+          />
+          <img
+            src="images/menOutfits7.jpg"
+            alt="Inspiration 7"
+            loading="lazy"
+          />
+          <img
+            src="images/menOutfits8.jpg"
+            alt="Inspiration 8"
+            loading="lazy"
+          />
         </div>
       </section>
 
