@@ -304,12 +304,12 @@ const guests = {
     vocative: "Natalio",
     lastName: "Sarna",
   },
-  "Alessia De Rossa": {
+  "Alessia De Rosa": {
     gender: "female",
     partner: "Igor Barć",
     partnerGender: "male",
     vocative: "Alessio",
-    lastName: "De Rossa",
+    lastName: "De Rosa",
     partnerVocative: "Igorze",
     partnerLastName: "Barć",
     sharedLastName: false,
