@@ -343,6 +343,17 @@ const guests = {
     vocative: "Kacprze",
     lastName: "Najdecki",
   },
+  "Elżbieta Kowal": {
+    gender: "female",
+    partner: "Andrzej Kowal",
+    partnerGender: "male",
+    vocative: "Elżbieto",
+    lastName: "Kowal",
+    partnerVocative: "Andrzeju",
+    partnerLastName: "Kowal",
+    sharedLastName: true,
+    pluralLastName: "Kowale",
+  },
 };
 
 const guestsKlaudia = {
@@ -536,5 +547,16 @@ const guestsKlaudia = {
     partnerGender: null,
     vocative: "Kacprze",
     lastName: "Najdecki",
+  },
+  "Elżbieta Kowal": {
+    gender: "female",
+    partner: "Andrzej Kowal",
+    partnerGender: "male",
+    vocative: "Elżbieto",
+    lastName: "Kowal",
+    partnerVocative: "Andrzeju",
+    partnerLastName: "Kowal",
+    sharedLastName: true,
+    pluralLastName: "Kowale",
   },
 };
