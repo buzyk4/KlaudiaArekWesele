@@ -352,7 +352,7 @@ const guests = {
     partnerVocative: "Andrzeju",
     partnerLastName: "Kowal",
     sharedLastName: true,
-    pluralLastName: "Kowale",
+    pluralLastName: "Kowal",
   },
 };
 
@@ -557,6 +557,6 @@ const guestsKlaudia = {
     partnerVocative: "Andrzeju",
     partnerLastName: "Kowal",
     sharedLastName: true,
-    pluralLastName: "Kowale",
+    pluralLastName: "Kowal",
   },
 };

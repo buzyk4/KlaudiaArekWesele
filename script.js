@@ -49,39 +49,52 @@ function findGuest(name) {
   // Normalize the input name (lowercase for comparison)
   const normalizedInput = name.trim().toLowerCase();
 
+  // Search in all available guest lists; presence in any single list is enough
+  const guestLists = [guests];
+  if (typeof guestsKlaudia !== "undefined") {
+    guestLists.push(guestsKlaudia);
+  }
+  if (typeof guestsArek !== "undefined") {
+    guestLists.push(guestsArek);
+  }
+
   // Check if name is a main guest
-  for (const [guestName, guestData] of Object.entries(guests)) {
-    if (guestName.toLowerCase() === normalizedInput) {
-      return {
-        mainName: guestName, // Return original capitalization
-        mainGuest: guestData,
-        isPartner: false,
-      };
+  for (const guestList of guestLists) {
+    for (const [guestName, guestData] of Object.entries(guestList)) {
+      if (guestName.toLowerCase() === normalizedInput) {
+        return {
+          mainName: guestName, // Return original capitalization
+          mainGuest: guestData,
+          isPartner: false,
+        };
+      }
     }
   }
 
   // Check if name is a partner
-  for (const [guestName, guestData] of Object.entries(guests)) {
-    if (
-      guestData.partner &&
-      guestData.partner.trim().toLowerCase() === normalizedInput
-    ) {
-      // Found as partner - swap them
-      return {
-        mainName: guestData.partner, // Return original capitalization
-        mainGuest: {
-          gender: guestData.partnerGender,
-          partner: guestName,
-          partnerGender: guestData.gender,
-          vocative: guestData.partnerVocative,
-          lastName: guestData.partnerLastName,
-          partnerVocative: guestData.vocative,
-          partnerLastName: guestData.lastName,
-          sharedLastName: guestData.sharedLastName,
-          pluralLastName: guestData.pluralLastName,
-        },
-        isPartner: true,
-      };
+  for (const guestList of guestLists) {
+    for (const [guestName, guestData] of Object.entries(guestList)) {
+      if (
+        guestData.partner &&
+        guestData.partner.trim().toLowerCase() === normalizedInput
+      ) {
+        // Found as partner - swap them
+        return {
+          mainName: guestData.partner, // Return original capitalization
+          mainGuest: {
+            gender: guestData.partnerGender,
+            partner: guestName,
+            partnerGender: guestData.gender,
+            vocative: guestData.partnerVocative,
+            lastName: guestData.partnerLastName,
+            partnerVocative: guestData.vocative,
+            partnerLastName: guestData.lastName,
+            sharedLastName: guestData.sharedLastName,
+            pluralLastName: guestData.pluralLastName,
+          },
+          isPartner: true,
+        };
+      }
     }
   }
 
